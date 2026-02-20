@@ -1,0 +1,136 @@
+
+body {
+  text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(145, 150, 161);
+}
+
+/* LOGIN */
+.loginBox {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: gray;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.loginBox input {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: orange;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+/* NAV BUTTONS */
+.navBtn {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    background: #eeeeee00;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navBtn:hover {
+    background: #dddddd;
+}
+
+.navBtn.active {
+    background: #3498db;
+    color: white;
+}
+
+.navBtn.exit {
+    background: #e74c3c;
+    color: white;
+}
+
+/* MAIN CONTENT */
+.mainContent {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* MESSAGE CARD */
+.messageCard {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+/* HORIZONTAL CONTAINER */
+.horizontalContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* FORM BOX */
+.formBox {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 250px;
+}
+
+.formBox input {
+    padding: 6px;
+}
+
+.formBox button {
+    padding: 6px 12px;
+}
+
+/* TABLE BOX */
+.tableBox {
+    flex: 1;
+    min-width: 400px;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+}
+
+.tableWrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+.tableWrapper th, .tableWrapper td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: left;
+}
+    

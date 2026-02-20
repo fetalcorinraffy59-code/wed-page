@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Web Page</title>
+</head>
+<body>
+<div id="loginPage" class="loginBox">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+</br>
+    <input type="password" id="password" placeholder="Password">
+</br>
+    <button id="loginBtn">Sign In</button>
+</div>
+    
+<div id="mainPage" style="display:none;">
+    <div class="sidebar">
+        <h2></h2>
+        <button id="homeBtn" class="navBtn active">Home</button>
+        <button id="personBtn" class="navBtn">Person</button>
+        <button id="contactBtn" class="navBtn">Contact</button>
+        <button id="aboutBtn" class="navBtn">About</button>
+        <button id="helpBtn" class="navBtn">Help</button>
+        <button id="exitBtn" class="navBtn exit">Exit</button>
+    </div>
+
+    <div class="mainContent">
+        <div id="homeMessage" class="messageCard">
+            <h2>Home</h2>
+            <P>Welcome to the main page of the application.</P>
+        </div>
+
+        <div id="contactMessage" class="messageCard" style="display:none;">
+            <h2>Contact</h2>
+           <p>Contact us at support@example.com or call 123-456-7890.</p>
+        </div>
+
+        <div id="aboutMessage" class="messageCard" style="display:none;">
+            <h2>About</h2>
+            <p>This system is designed to manage user information and provide navigation between different sections.</p>
+        </div>
+
+        <div id="helpMessage" class="messageCard" style="display:none;">
+            <h2>Help</h2>
+            <p>For assistance, please contact support@example.com or call 123-456-7890.</p>
+        </div>
+
+        <div id="personSection" class="card" style="display:none;">
+            <h2>Personal Information</h2>
+            <div class="horizontalContainer">
+
+               <div class="formBox">
+                    <input type="text" id="name" placeholder="First Name">
+                    <input type="text" id="middlename" placeholder="Middle Name">
+                    <input type="text" id="lastname" placeholder="Last Name">
+                    <input type="text" id="gmail" placeholder="Gmail">
+                    <button id="saveBtn">Save</button>
+                </div>
+
+
+            <div class="displayBox">
+            <h3>Saved Information</h3>
+             <div id="displayInfo" class="displayBox">
+               <table id="dataTable">
+                 <thead>
+                 <tr>
+                 <th>Name</th>
+                 <th>Middle Name</th>
+                <th>Last Name</th>
+                <th>Gmail</th>
+
+       </tr>
+       </thead>
+       <tbody>
+
+       </tbody>
+    </table>
+</div>
+</div>
+</div>            
+</div>
+
+<script src= "script.js"></script>
+</body>
+</html>
